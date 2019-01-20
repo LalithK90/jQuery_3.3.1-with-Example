@@ -1,0 +1,93 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+			
+            $("li").click(function () {
+				
+               if ($(this).is(":first-child")) {
+                  $("p").text("This is list item 1");
+               } else if ($(this).is(".middle0,.middle1")) {
+                  $("p").text("This is middle class list");
+               } else if ($(this).is(":contains('item 5')")) {
+                  $("p").text("It's 5th list");
+               } 
+            });
+				
+         });
+      </script>
+		
+      <style>
+         .selected { color:red; }
+      </style>
+   </head>
+	
+   <body>
+      <div>
+         <span>Click any list item below:</span>
+			
+         <ul>
+            <li class = "top0">list item 1</li>
+            <li class = "top1">list item 2</li>
+            <li class = "middle0">list item 3</li>
+            <li class = "middle1">list item 4</li>
+            <li class = "bottom0">list item 5</li>
+            <li class = "bottom1">list item 6</li>
+         </ul>
+			
+         <p>FILLER</p>
+      </div>
+      <h2>Sample Code</h2>
+      <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">language</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"javascript"</span><span class="tag">&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+         
+            $</span><span class="pun">(</span><span class="str">"li"</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            
+               </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">is</span><span class="pun">(</span><span class="str">":first-child"</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                  $</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="str">"This is list item 1"</span><span class="pun">);</span><span class="pln">
+               </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">is</span><span class="pun">(</span><span class="str">".middle0,.middle1"</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                  $</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="str">"This is middle class list"</span><span class="pun">);</span><span class="pln">
+               </span><span class="pun">}</span><span class="pln"> </span><span class="kwd">else</span><span class="pln"> </span><span class="kwd">if</span><span class="pln"> </span><span class="pun">(</span><span class="pln">$</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">is</span><span class="pun">(</span><span class="str">":contains('item 5')"</span><span class="pun">))</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                  $</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">text</span><span class="pun">(</span><span class="str">"It's 5th list"</span><span class="pun">);</span><span class="pln">
+               </span><span class="pun">}</span><span class="pln"> 
+            </span><span class="pun">});</span><span class="pln">
+            
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         </span><span class="pun">.</span><span class="pln">selected </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln">red</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div&gt;</span><span class="pln">
+         </span><span class="tag">&lt;span&gt;</span><span class="pln">Click any list item below:</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+         
+         </span><span class="tag">&lt;ul&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"top0"</span><span class="tag">&gt;</span><span class="pln">list item 1</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"top1"</span><span class="tag">&gt;</span><span class="pln">list item 2</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"middle0"</span><span class="tag">&gt;</span><span class="pln">list item 3</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"middle1"</span><span class="tag">&gt;</span><span class="pln">list item 4</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"bottom0"</span><span class="tag">&gt;</span><span class="pln">list item 5</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+            </span><span class="tag">&lt;li</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"bottom1"</span><span class="tag">&gt;</span><span class="pln">list item 6</span><span class="tag">&lt;/li&gt;</span><span class="pln">
+         </span><span class="tag">&lt;/ul&gt;</span><span class="pln">
+         
+         </span><span class="tag">&lt;p&gt;</span><span class="pln">FILLER</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+   </body>
+</html>

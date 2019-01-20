@@ -1,0 +1,57 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script>
+         $(document).ready(function(){
+            $("div").children(".selected").addClass("blue");
+         });
+      </script>
+		
+      <style>
+         .blue { color:blue; }
+      </style>
+   </head>
+	
+   <body>
+      <div>
+         <span>Hello</span>
+         <p class = "blue">Hello Again</p>
+         <div class = "blue">And Again</div>
+         <p class = "biggest">And One Last Time</p>
+      </div>
+      <div>
+         <h2>Sample code</h2>
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+            $</span><span class="pun">(</span><span class="str">"div"</span><span class="pun">).</span><span class="pln">children</span><span class="pun">(</span><span class="str">".selected"</span><span class="pun">).</span><span class="pln">addClass</span><span class="pun">(</span><span class="str">"blue"</span><span class="pun">);</span><span class="pln">
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         </span><span class="pun">.</span><span class="pln">blue </span><span class="pun">{</span><span class="pln"> color</span><span class="pun">:</span><span class="pln">blue</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div&gt;</span><span class="pln">
+         </span><span class="tag">&lt;span&gt;</span><span class="pln">Hello</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+         </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"blue"</span><span class="tag">&gt;</span><span class="pln">Hello Again</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+         </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"blue"</span><span class="tag">&gt;</span><span class="pln">And Again</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+         </span><span class="tag">&lt;p</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"biggest"</span><span class="tag">&gt;</span><span class="pln">And One Last Time</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>

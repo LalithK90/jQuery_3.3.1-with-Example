@@ -1,0 +1,80 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function(){
+            $("div.demo").scrollTop( 200 );
+				
+            $("div.demo").mousemove(function () {
+               var top = $("div.demo").scrollTop();
+               $("#result").html("top offset: <span>" + top + "</span>.");
+            });
+				
+         });
+      </script>
+		
+      <style>
+         div.demo {background:#CCCCCC none repeat scroll 0 0; border:3px 
+            solid #666666; margin:5px; padding:5px; position:relative;
+            width:200px; height:100px; overflow:auto;}
+				
+         div.result{margin:10px; width:100px; height:100px; 
+            margin:5px; float:left; background-color:blue;}
+				
+         p { margin:10px; padding:5px; border:2px solid #666; 
+            width:1000px; height:1000px;}
+      </style>
+   </head>
+	
+   <body>
+      <div class = "demo"><p>Hello</p></div>
+      <span>Scroll vertical button to see the result:</span>
+      <div class = "result"><span id = "result"></span></div>
+      <hr>
+      <div>
+         <h2>Sample code</h2>
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">language</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"javascript"</span><span class="tag">&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+            $</span><span class="pun">(</span><span class="str">"div.demo"</span><span class="pun">).</span><span class="pln">scrollTop</span><span class="pun">(</span><span class="pln"> </span><span class="lit">200</span><span class="pln"> </span><span class="pun">);</span><span class="pln">
+            
+            $</span><span class="pun">(</span><span class="str">"div.demo"</span><span class="pun">).</span><span class="pln">mousemove</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+               </span><span class="kwd">var</span><span class="pln"> top </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"div.demo"</span><span class="pun">).</span><span class="pln">scrollTop</span><span class="pun">();</span><span class="pln">
+               $</span><span class="pun">(</span><span class="str">"#result"</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="str">"top offset: &lt;span&gt;"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> top </span><span class="pun">+</span><span class="pln"> </span><span class="str">"&lt;/span&gt;."</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">});</span><span class="pln">
+            
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         div</span><span class="pun">.</span><span class="pln">demo </span><span class="pun">{</span><span class="pln">background</span><span class="pun">:#</span><span class="pln">CCCCCC none repeat scroll </span><span class="lit">0</span><span class="pln"> </span><span class="lit">0</span><span class="pun">;</span><span class="pln"> border</span><span class="pun">:</span><span class="lit">3px</span><span class="pln"> 
+            solid </span><span class="com">#666666; margin:5px; padding:5px; position:relative;</span><span class="pln">
+            width</span><span class="pun">:</span><span class="lit">200px</span><span class="pun">;</span><span class="pln"> height</span><span class="pun">:</span><span class="lit">100px</span><span class="pun">;</span><span class="pln"> overflow</span><span class="pun">:</span><span class="kwd">auto</span><span class="pun">;}</span><span class="pln">
+            
+         div</span><span class="pun">.</span><span class="pln">result</span><span class="pun">{</span><span class="pln">margin</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> width</span><span class="pun">:</span><span class="lit">100px</span><span class="pun">;</span><span class="pln"> height</span><span class="pun">:</span><span class="lit">100px</span><span class="pun">;</span><span class="pln"> 
+            margin</span><span class="pun">:</span><span class="lit">5px</span><span class="pun">;</span><span class="pln"> </span><span class="kwd">float</span><span class="pun">:</span><span class="pln">left</span><span class="pun">;</span><span class="pln"> background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">blue</span><span class="pun">;}</span><span class="pln">
+            
+         p </span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> padding</span><span class="pun">:</span><span class="lit">5px</span><span class="pun">;</span><span class="pln"> border</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> solid </span><span class="com">#666; </span><span class="pln">
+            width</span><span class="pun">:</span><span class="lit">1000px</span><span class="pun">;</span><span class="pln"> height</span><span class="pun">:</span><span class="lit">1000px</span><span class="pun">;}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"demo"</span><span class="tag">&gt;&lt;p&gt;</span><span class="pln">Hello</span><span class="tag">&lt;/p&gt;&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span&gt;</span><span class="pln">Scroll vertical button to see the result:</span><span class="tag">&lt;/span&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"result"</span><span class="tag">&gt;&lt;span</span><span class="pln"> </span><span class="atn">id</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"result"</span><span class="tag">&gt;&lt;/span&gt;&lt;/div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>

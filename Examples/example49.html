@@ -1,0 +1,54 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script>
+         $(document).ready(function(){
+            $("p").find("span").end().css("border", "2px red solid");
+         });
+      </script>
+		
+      <style>
+         p{ 
+            margin:10px; 
+            padding:10px; 
+         }
+      </style>
+   </head>
+	
+   <body>
+      <p><span>Hello</span>, how are you?</p>
+
+      <div>
+         <h2>Sample code</h2>
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+            $</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">find</span><span class="pun">(</span><span class="str">"span"</span><span class="pun">).</span><span class="pln">end</span><span class="pun">().</span><span class="pln">css</span><span class="pun">(</span><span class="str">"border"</span><span class="pun">,</span><span class="pln"> </span><span class="str">"2px red solid"</span><span class="pun">);</span><span class="pln">
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         p</span><span class="pun">{</span><span class="pln"> 
+            margin</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> 
+            padding</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln"> 
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;&lt;span&gt;</span><span class="pln">Hello</span><span class="tag">&lt;/span&gt;</span><span class="pln">, how are you?</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>

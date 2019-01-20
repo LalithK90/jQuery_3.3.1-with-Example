@@ -1,0 +1,73 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type="text/javascript"  src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+      <script type="text/javascript" language="javascript">
+   
+         $(document).ready(function() {
+
+            $(".wrapper").click(function () {
+               var newcolor = $(this).css('background-color');
+               $(".inner").wrapAll("<div class='newinner' style='border:2px solid "+newcolor+"';></div>");
+            });
+         });
+      </script>
+      <style>
+         .wrapper{ margin:10px;padding:12px;
+            border:2px solid #666;
+         }
+         .inner{ padding:20px;
+            border:2px solid #666;
+         }
+      </style>
+   </head>
+   <body>
+      <p>Click on any square below to see the result −</p>
+      <div class="inner" id="destination">Element-1</div>
+      <div class="inner" id="destination">Element-2</div>
+      <div class="inner" id="destination">Element-3</div>
+      <div class="wrapper" style="background-color:blue;">ONE</div>
+      <div class="wrapper" style="background-color:green;">TWO</div>
+      <div class="wrapper" style="background-color:red;">THREE</div>
+
+      <hr>
+      <div>
+         <h2>
+            Sample code
+         </h2>
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln">  </span><span class="atn">src</span><span class="pun">=</span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;&lt;/script&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pun">=</span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">language</span><span class="pun">=</span><span class="atv">"javascript"</span><span class="tag">&gt;</span><span class="pln">
+   
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+
+            $</span><span class="pun">(</span><span class="str">".wrapper"</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+               </span><span class="kwd">var</span><span class="pln"> newcolor </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">css</span><span class="pun">(</span><span class="str">'background-color'</span><span class="pun">);</span><span class="pln">
+               $</span><span class="pun">(</span><span class="str">".inner"</span><span class="pun">).</span><span class="pln">wrapAll</span><span class="pun">(</span><span class="str">"&lt;div class='newinner' style='border:2px solid "</span><span class="pun">+</span><span class="pln">newcolor</span><span class="pun">+</span><span class="str">"';&gt;&lt;/div&gt;"</span><span class="pun">);</span><span class="pln">
+            </span><span class="pun">});</span><span class="pln">
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         </span><span class="pun">.</span><span class="pln">wrapper</span><span class="pun">{</span><span class="pln"> margin</span><span class="pun">:</span><span class="lit">10px</span><span class="pun">;</span><span class="pln">padding</span><span class="pun">:</span><span class="lit">12px</span><span class="pun">;</span><span class="pln">
+            border</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> solid </span><span class="com">#666;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+         </span><span class="pun">.</span><span class="pln">inner</span><span class="pun">{</span><span class="pln"> padding</span><span class="pun">:</span><span class="lit">20px</span><span class="pun">;</span><span class="pln">
+            border</span><span class="pun">:</span><span class="lit">2px</span><span class="pln"> solid </span><span class="com">#666;</span><span class="pln">
+         </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Click on any square below to see the result −</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inner"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"destination"</span><span class="tag">&gt;</span><span class="pln">Element-1</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inner"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"destination"</span><span class="tag">&gt;</span><span class="pln">Element-2</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"inner"</span><span class="pln"> </span><span class="atn">id</span><span class="pun">=</span><span class="atv">"destination"</span><span class="tag">&gt;</span><span class="pln">Element-3</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrapper"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">blue</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">ONE</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrapper"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">green</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">TWO</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"wrapper"</span><span class="pln"> </span><span class="atn">style</span><span class="pun">=</span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">red</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;</span><span class="pln">THREE</span><span class="tag">&lt;/div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>

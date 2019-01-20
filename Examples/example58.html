@@ -1,0 +1,58 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function(){
+            $("p").parent().addClass('hilight');
+         });
+      </script>
+		
+      <style>
+         .hilight { background:yellow; }
+      </style>
+   </head>
+	
+   <body>
+      <scan>Top Element</scan>
+      <div class = "hilight">
+         <div>sibling<div>child</div></div>
+         <p>sibling</p>
+         <scan>sibling</scan>
+      <div>
+         <div>
+            <h2>Sample code</h2>
+
+            <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">language</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"javascript"</span><span class="tag">&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+            $</span><span class="pun">(</span><span class="str">"p"</span><span class="pun">).</span><span class="pln">parent</span><span class="pun">().</span><span class="pln">addClass</span><span class="pun">(</span><span class="str">'hilight'</span><span class="pun">);</span><span class="pln">
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         </span><span class="pun">.</span><span class="pln">hilight </span><span class="pun">{</span><span class="pln"> background</span><span class="pun">:</span><span class="pln">yellow</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;scan&gt;</span><span class="pln">Top Element</span><span class="tag">&lt;/scan&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">class</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"hilight"</span><span class="tag">&gt;</span><span class="pln">
+         </span><span class="tag">&lt;div&gt;</span><span class="pln">sibling</span><span class="tag">&lt;div&gt;</span><span class="pln">child</span><span class="tag">&lt;/div&gt;&lt;/div&gt;</span><span class="pln">
+         </span><span class="tag">&lt;p&gt;</span><span class="pln">sibling</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+         </span><span class="tag">&lt;scan&gt;</span><span class="pln">sibling</span><span class="tag">&lt;/scan&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+         </div>
+   </body>
+</html>

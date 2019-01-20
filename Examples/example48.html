@@ -1,0 +1,43 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script>
+         $(document).ready(function(){
+            var $content = $("iframe").contents();
+            $content.find("body").append("I'm in an iframe!");
+         });
+      </script>
+   </head>
+	
+   <body>
+      <iframe src = "/example1.html" width = "300" height = "100"></iframe>
+
+      <div class="container-fluid">
+         <h2>Sample code</h2>
+
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">(){</span><span class="pln">
+            </span><span class="kwd">var</span><span class="pln"> $content </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="str">"iframe"</span><span class="pun">).</span><span class="pln">contents</span><span class="pun">();</span><span class="pln">
+            $content</span><span class="pun">.</span><span class="pln">find</span><span class="pun">(</span><span class="str">"body"</span><span class="pun">).</span><span class="pln">append</span><span class="pun">(</span><span class="str">"I'm in an iframe!"</span><span class="pun">);</span><span class="pln">
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;iframe</span><span class="pln"> </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"/jquery/index.htm"</span><span class="pln"> </span><span class="atn">width</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"300"</span><span class="pln"> </span><span class="atn">height</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"100"</span><span class="tag">&gt;&lt;/iframe&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>

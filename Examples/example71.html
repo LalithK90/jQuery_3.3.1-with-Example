@@ -1,0 +1,74 @@
+<html>
+   <head>
+      <title>The jQuery Example</title>
+      <script type = "text/javascript" 
+         src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+      </script>
+		
+      <script type = "text/javascript" language = "javascript">
+         $(document).ready(function() {
+			
+            $("div").click(function () {
+               var color = $(this).css("background-color");
+               $("#result").html("That div is <span>" + color + "</span>.");
+               $("#result").css({'color': color, 'font-weight' : 'bold', 
+                  'background-color': 'gray'});
+            });
+				
+         });
+      </script>
+		
+      <style>
+         div { width:60px; height:60px; margin:5px; float:left; }
+      </style>
+   </head>
+	
+   <body>
+      <p>Click on any square:</p>
+      <span id = "result"> </span>
+		
+      <div style = "background-color:blue;"></div>
+      <div style = "background-color:rgb(15,99,30);"></div>
+      <div style = "background-color:#123456;"></div>
+      <div style = "background-color:#f11;"></div>
+      <div>
+         <h2>sample code</h2>
+
+         <pre class="prettyprint notranslate prettyprinted" style=""><span class="tag">&lt;html&gt;</span><span class="pln">
+   </span><span class="tag">&lt;head&gt;</span><span class="pln">
+      </span><span class="tag">&lt;title&gt;</span><span class="pln">The jQuery Example</span><span class="tag">&lt;/title&gt;</span><span class="pln">
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> 
+         </span><span class="atn">src</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"</span><span class="tag">&gt;</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;script</span><span class="pln"> </span><span class="atn">type</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"text/javascript"</span><span class="pln"> </span><span class="atn">language</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"javascript"</span><span class="tag">&gt;</span><span class="pln">
+         $</span><span class="pun">(</span><span class="pln">document</span><span class="pun">).</span><span class="pln">ready</span><span class="pun">(</span><span class="kwd">function</span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+         
+            $</span><span class="pun">(</span><span class="str">"div"</span><span class="pun">).</span><span class="pln">click</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">()</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+               </span><span class="kwd">var</span><span class="pln"> color </span><span class="pun">=</span><span class="pln"> $</span><span class="pun">(</span><span class="kwd">this</span><span class="pun">).</span><span class="pln">css</span><span class="pun">(</span><span class="str">"background-color"</span><span class="pun">);</span><span class="pln">
+               $</span><span class="pun">(</span><span class="str">"#result"</span><span class="pun">).</span><span class="pln">html</span><span class="pun">(</span><span class="str">"That div is &lt;span&gt;"</span><span class="pln"> </span><span class="pun">+</span><span class="pln"> color </span><span class="pun">+</span><span class="pln"> </span><span class="str">"&lt;/span&gt;."</span><span class="pun">);</span><span class="pln">
+               $</span><span class="pun">(</span><span class="str">"#result"</span><span class="pun">).</span><span class="pln">css</span><span class="pun">({</span><span class="str">'color'</span><span class="pun">:</span><span class="pln"> color</span><span class="pun">,</span><span class="pln"> </span><span class="str">'font-weight'</span><span class="pln"> </span><span class="pun">:</span><span class="pln"> </span><span class="str">'bold'</span><span class="pun">,</span><span class="pln"> 
+                  </span><span class="str">'background-color'</span><span class="pun">:</span><span class="pln"> </span><span class="str">'gray'</span><span class="pun">});</span><span class="pln">
+            </span><span class="pun">});</span><span class="pln">
+            
+         </span><span class="pun">});</span><span class="pln">
+      </span><span class="tag">&lt;/script&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;style&gt;</span><span class="pln">
+         div </span><span class="pun">{</span><span class="pln"> width</span><span class="pun">:</span><span class="lit">60px</span><span class="pun">;</span><span class="pln"> height</span><span class="pun">:</span><span class="lit">60px</span><span class="pun">;</span><span class="pln"> margin</span><span class="pun">:</span><span class="lit">5px</span><span class="pun">;</span><span class="pln"> </span><span class="kwd">float</span><span class="pun">:</span><span class="pln">left</span><span class="pun">;</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+      </span><span class="tag">&lt;/style&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/head&gt;</span><span class="pln">
+   
+   </span><span class="tag">&lt;body&gt;</span><span class="pln">
+      </span><span class="tag">&lt;p&gt;</span><span class="pln">Click on any square:</span><span class="tag">&lt;/p&gt;</span><span class="pln">
+      </span><span class="tag">&lt;span</span><span class="pln"> </span><span class="atn">id</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"result"</span><span class="tag">&gt;</span><span class="pln"> </span><span class="tag">&lt;/span&gt;</span><span class="pln">
+      
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">blue</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:</span><span class="pln">rgb</span><span class="pun">(</span><span class="lit">15</span><span class="pun">,</span><span class="lit">99</span><span class="pun">,</span><span class="lit">30</span><span class="pun">);</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:#</span><span class="lit">123456</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+      </span><span class="tag">&lt;div</span><span class="pln"> </span><span class="atn">style</span><span class="pln"> </span><span class="pun">=</span><span class="pln"> </span><span class="atv">"</span><span class="pln">background</span><span class="pun">-</span><span class="pln">color</span><span class="pun">:#</span><span class="pln">f11</span><span class="pun">;</span><span class="atv">"</span><span class="tag">&gt;&lt;/div&gt;</span><span class="pln">
+   </span><span class="tag">&lt;/body&gt;</span><span class="pln">
+</span><span class="tag">&lt;/html&gt;</span></pre>
+      </div>
+   </body>
+</html>
